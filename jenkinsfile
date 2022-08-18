@@ -1,5 +1,12 @@
 
 pipeline{
-   agent any{
+   agent any
        stages{
+           stage{
+             steps{
+             git credentialsId: '35e6b64a-aaf1-45d4-a870-b9ef64cdb33c', url: 'https://github.com/kurma5147/Basicpipelines.git'
              
+           }
+       }
+     }
+  }
